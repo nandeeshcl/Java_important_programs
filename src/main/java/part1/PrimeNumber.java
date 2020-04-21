@@ -4,29 +4,26 @@ public class PrimeNumber {
 
 	public static void main(String[] args) {
 
-		int n = 11;
+		int n = 6;
+
 		int count = 0;
 
-		if (n > 1) {
-			for (int i = 2; i <= n; i++) {
-				if (n % i == 0) {
-					count++;
-				}
+		for (int i = 2; i < n; i++) {
+			if (n % i == 0) {
+				count = count + 1;
+				break;
 			}
+		}
 
-			if (count == 1) {
-				System.out.println("Prime number");
-			}
-
-			else {
-				System.out.println("Not a prime number");
-			}
+		if (count == 0) {
+			System.out.println("Prime");
 		}
 
 		else {
-			System.out.println("Not a prime number");
+			System.out.println("Not Prime");
 		}
 
 	}
+
 
 }
