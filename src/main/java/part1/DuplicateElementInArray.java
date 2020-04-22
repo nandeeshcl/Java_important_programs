@@ -7,7 +7,7 @@ public class DuplicateElementInArray {
 
 	public static void main(String[] args) {
 
-		int a[] = { 1, 2, 3, 2 };
+		int a[] = { 1, 2, 3, 2,3,4 };
 		Set<Integer> set = new TreeSet<Integer>();
 
 		for (int i : a) {
